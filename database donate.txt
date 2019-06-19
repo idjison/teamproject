@@ -1,0 +1,26 @@
+create database donate;
+
+use donate;
+
+CREATE TABLE member(
+ id varchar(50) null,
+ password varchar(30) null,
+ name varchar(14) null,
+ gender varchar(30) null,
+ birthday varchar(30) null,
+ mail varchar(30) null,
+ phone varchar(30) null,
+ address varchar(30) null,
+ money int default 0,
+ reg datetime DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE talk 
+(
+  tno int primary key auto_increment ,
+  tid varchar(15) NULL,
+  tpassword varchar(15) NULL,
+  tcontent varchar(1000),
+  tdate datetime default current_timestamp
+);
